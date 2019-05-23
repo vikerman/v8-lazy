@@ -11,7 +11,7 @@ import { EmptyComponent } from './empty/empty.component';
     EmptyComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
